@@ -1,0 +1,20 @@
+{
+    "version": "0001",
+    "name": "add_address_to_user_tab",
+    "author": "",
+    "type": "schema",
+    "change": {
+        "forward": {
+            "id": "9e141cec6abc314a1add78bd860948cf3877f93d"
+        },
+        "backward": {
+            "id": "f22e897abb0b7c91896d24982e546055d03a3c3e"
+        }
+    },
+    "dependencies": [
+        {
+            "version": "0000",
+            "name": "init"
+        }
+    ]
+}
