@@ -1,0 +1,137 @@
+2025-10-08 01:44:58 [WARNING]  MYSQL_PWD is not set in environment variable, use empty string
+2025-10-08 01:44:58 [INFO]  Run skeema init --host mysql-prod --port 3306 --user root --schema awesome_db -d schema --ignore-table _migration_history
+2025-10-08 01:44:58 [ERROR]  Command '['skeema', 'init', '--host', 'mysql-prod', '--port', '3306', '--user', 'root', '--schema', 'awesome_db', '-d', 'schema', '--ignore-table', '_migration_history']' returned non-zero exit status 2.
+2025-10-08 01:47:50 [WARNING]  MYSQL_PWD is not set in environment variable, use empty string
+2025-10-08 01:49:36 [INFO]  Run skeema add-environment dev --host mysql-dev --port 3306 --user root -d schema --ignore-table _migration_history
+2025-10-08 01:49:36 [ERROR]  Command '['skeema', 'add-environment', 'dev', '--host', 'mysql-dev', '--port', '3306', '--user', 'root', '-d', 'schema', '--ignore-table', '_migration_history']' returned non-zero exit status 78.
+2025-10-08 01:52:01 [INFO]  Run skeema init --host mysql-prod --port 3306 --user root --schema awesome_db -d schema --ignore-table _migration_history
+2025-10-08 01:52:04 [INFO]  Saved migration plan to /workspace/migration_plan/0000_init.json
+2025-10-08 01:52:04 [INFO]  MYSQL_WD is saved in .env file, path=/workspace/.env
+2025-10-08 01:52:04 [INFO]  Done
+2025-10-08 01:55:41 [INFO]  Run skeema add-environment dev --host mysql-dev --port 3306 --user root -d schema --ignore-table _migration_history
+2025-10-08 01:55:41 [INFO]  Done
+2025-10-08 01:58:37 [INFO]  Done
+2025-10-08 02:00:43 [INFO]  Running in dry run mode, no migration will be executed
+2025-10-08 02:00:43 [INFO]  Migration plans to execute:
+2025-10-08 02:00:43 [INFO]  Done
+2025-10-08 02:02:18 [INFO]  Executing MigrationPlan(0000_init)
+2025-10-08 02:02:18 [INFO]  Run skeema push dev
+2025-10-08 02:02:19 [INFO]  Done
+2025-10-08 02:04:42 [INFO]  Saved migration plan to /workspace/migration_plan/0001_add_address_to_user_tab.json
+2025-10-08 02:04:42 [INFO]  Done
+2025-10-08 02:04:44 [INFO]  Executing MigrationPlan(0001_add_address_to_user_tab)
+2025-10-08 02:04:44 [INFO]  Run skeema push dev
+2025-10-08 02:04:44 [ERROR]  Command '['skeema', 'push', 'dev']' returned non-zero exit status 2.
+2025-10-08 02:04:46 [INFO]  Migration history:
+|   ver | name                    | type   | state      | rollbackable   | created             | updated             |
+|-------+-------------------------+--------+------------+----------------+---------------------+---------------------|
+|  0000 | init                    | schema | SUCCESSFUL | false          | 2025-10-08 02:02:19 | 2025-10-08 02:02:19 |
+|  0001 | add_address_to_user_tab | schema | PROCESSING | true           | 2025-10-08 02:04:45 | 2025-10-08 02:04:45 |
+2025-10-08 02:04:46 [INFO]  Done
+2025-10-08 02:08:04 [INFO]  Executing MigrationPlan(0001_add_address_to_user_tab)
+2025-10-08 02:08:04 [INFO]  Run skeema push dev
+2025-10-08 02:08:04 [ERROR]  Command '['skeema', 'push', 'dev']' returned non-zero exit status 2.
+2025-10-08 02:10:25 [INFO]  Run skeema lint dev
+2025-10-08 02:10:25 [ERROR]  Command '['skeema', 'lint', 'dev']' returned non-zero exit status 1.
+2025-10-08 02:10:26 [INFO]  Executing MigrationPlan(0001_add_address_to_user_tab)
+2025-10-08 02:10:26 [INFO]  Run skeema push dev
+2025-10-08 02:10:26 [ERROR]  Command '['skeema', 'push', 'dev']' returned non-zero exit status 2.
+2025-10-08 02:10:28 [INFO]  Migration history:
+|   ver | name                    | type   | state      | rollbackable   | created             | updated             |
+|-------+-------------------------+--------+------------+----------------+---------------------+---------------------|
+|  0000 | init                    | schema | SUCCESSFUL | false          | 2025-10-08 02:02:19 | 2025-10-08 02:02:19 |
+|  0001 | add_address_to_user_tab | schema | PROCESSING | true           | 2025-10-08 02:04:45 | 2025-10-08 02:04:45 |
+2025-10-08 02:10:28 [INFO]  Done
+2025-10-08 02:15:22 [INFO]  Run skeema lint dev
+2025-10-08 02:15:22 [ERROR]  Command '['skeema', 'lint', 'dev']' returned non-zero exit status 1.
+2025-10-08 02:17:10 [INFO]  Executing MigrationPlan(0001_add_address_to_user_tab)
+2025-10-08 02:17:10 [INFO]  Run skeema push dev
+2025-10-08 02:17:10 [ERROR]  Command '['skeema', 'push', 'dev']' returned non-zero exit status 2.
+2025-10-08 02:17:12 [INFO]  Migration history:
+|   ver | name                    | type   | state      | rollbackable   | created             | updated             |
+|-------+-------------------------+--------+------------+----------------+---------------------+---------------------|
+|  0000 | init                    | schema | SUCCESSFUL | false          | 2025-10-08 02:02:19 | 2025-10-08 02:02:19 |
+|  0001 | add_address_to_user_tab | schema | PROCESSING | true           | 2025-10-08 02:04:45 | 2025-10-08 02:04:45 |
+2025-10-08 02:17:12 [INFO]  Done
+2025-10-08 02:19:05 [INFO]  Done
+2025-10-08 02:19:07 [INFO]  Migration history:
+|   ver | name                    | type   | state      | rollbackable   | created             | updated             |
+|-------+-------------------------+--------+------------+----------------+---------------------+---------------------|
+|  0000 | init                    | schema | SUCCESSFUL | false          | 2025-10-08 02:02:19 | 2025-10-08 02:02:19 |
+|  0001 | add_address_to_user_tab | schema | SUCCESSFUL | true           | 2025-10-08 02:04:45 | 2025-10-08 02:19:05 |
+2025-10-08 02:19:07 [INFO]  Done
+2025-10-08 02:20:38 [INFO]  Saved migration plan to /workspace/migration_plan/0002_add_address_to_user_tab_v2.json
+2025-10-08 02:20:38 [INFO]  Done
+2025-10-08 02:20:39 [INFO]  Executing MigrationPlan(0002_add_address_to_user_tab_v2)
+2025-10-08 02:20:39 [INFO]  Run skeema push dev
+2025-10-08 02:20:40 [INFO]  Done
+2025-10-08 02:20:42 [INFO]  Migration history:
+|   ver | name                       | type   | state      | rollbackable   | created             | updated             |
+|-------+----------------------------+--------+------------+----------------+---------------------+---------------------|
+|  0000 | init                       | schema | SUCCESSFUL | false          | 2025-10-08 02:02:19 | 2025-10-08 02:02:19 |
+|  0001 | add_address_to_user_tab    | schema | SUCCESSFUL | true           | 2025-10-08 02:04:45 | 2025-10-08 02:19:05 |
+|  0002 | add_address_to_user_tab_v2 | schema | SUCCESSFUL | true           | 2025-10-08 02:20:40 | 2025-10-08 02:20:41 |
+2025-10-08 02:20:42 [INFO]  Done
+2025-10-08 02:22:10 [INFO]  Saved migration plan to /workspace/migration_plan/0003_seed_user_table.json
+2025-10-08 02:22:10 [INFO]  Done
+2025-10-08 02:22:12 [INFO]  Running in dry run mode, no migration will be executed
+2025-10-08 02:22:12 [INFO]  Migration plans to execute:
+2025-10-08 02:22:12 [INFO]  Done
+2025-10-08 02:22:14 [INFO]  Executing MigrationPlan(0003_seed_user_table)
+2025-10-08 02:22:14 [ERROR]  (MySQLdb.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\x07ddress) VALUES (1,'foo','bar')' at line 2")
+[SQL: INSERT INTO user (id,
+ame,ddress) VALUES (1,'foo','bar');]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-08 02:22:15 [INFO]  Migration history:
+|   ver | name                       | type   | state      | rollbackable   | created             | updated             |
+|-------+----------------------------+--------+------------+----------------+---------------------+---------------------|
+|  0000 | init                       | schema | SUCCESSFUL | false          | 2025-10-08 02:02:19 | 2025-10-08 02:02:19 |
+|  0001 | add_address_to_user_tab    | schema | SUCCESSFUL | true           | 2025-10-08 02:04:45 | 2025-10-08 02:19:05 |
+|  0002 | add_address_to_user_tab_v2 | schema | SUCCESSFUL | true           | 2025-10-08 02:20:40 | 2025-10-08 02:20:41 |
+|  0003 | seed_user_table            | data   | PROCESSING | true           | 2025-10-08 02:22:14 | 2025-10-08 02:22:14 |
+2025-10-08 02:22:15 [INFO]  Done
+2025-10-08 02:26:19 [INFO]  Running in dry run mode, no migration will be executed
+2025-10-08 02:26:19 [ERROR]  Migration is not successful, version=0003, name=seed_user_table
+2025-10-08 02:26:20 [INFO]  Executing MigrationPlan(0003_seed_user_table)
+2025-10-08 02:26:20 [ERROR]  (MySQLdb.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\x07ddress) VALUES (1,'foo','bar')' at line 2")
+[SQL: INSERT INTO user (id,
+ame,ddress) VALUES (1,'foo','bar');]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-08 02:26:22 [INFO]  Migration history:
+|   ver | name                       | type   | state      | rollbackable   | created             | updated             |
+|-------+----------------------------+--------+------------+----------------+---------------------+---------------------|
+|  0000 | init                       | schema | SUCCESSFUL | false          | 2025-10-08 02:02:19 | 2025-10-08 02:02:19 |
+|  0001 | add_address_to_user_tab    | schema | SUCCESSFUL | true           | 2025-10-08 02:04:45 | 2025-10-08 02:19:05 |
+|  0002 | add_address_to_user_tab_v2 | schema | SUCCESSFUL | true           | 2025-10-08 02:20:40 | 2025-10-08 02:20:41 |
+|  0003 | seed_user_table            | data   | PROCESSING | true           | 2025-10-08 02:22:14 | 2025-10-08 02:22:14 |
+2025-10-08 02:26:22 [INFO]  Done
+2025-10-08 02:30:54 [INFO]  Executing MigrationPlan(0003_seed_user_table)
+2025-10-08 02:30:54 [INFO]  Migrated SQL=INSERT INTO `user` (`id`,`name`,`address`) VALUES (1,'foo','bar');, result.rowcount=1
+2025-10-08 02:30:54 [INFO]  Done
+2025-10-08 02:30:56 [INFO]  Migration history:
+|   ver | name                       | type   | state      | rollbackable   | created             | updated             |
+|-------+----------------------------+--------+------------+----------------+---------------------+---------------------|
+|  0000 | init                       | schema | SUCCESSFUL | false          | 2025-10-08 02:02:19 | 2025-10-08 02:02:19 |
+|  0001 | add_address_to_user_tab    | schema | SUCCESSFUL | true           | 2025-10-08 02:04:45 | 2025-10-08 02:19:05 |
+|  0002 | add_address_to_user_tab_v2 | schema | SUCCESSFUL | true           | 2025-10-08 02:20:40 | 2025-10-08 02:20:41 |
+|  0003 | seed_user_table            | data   | SUCCESSFUL | true           | 2025-10-08 02:22:14 | 2025-10-08 02:30:55 |
+2025-10-08 02:30:56 [INFO]  Done
+2025-10-08 02:32:02 [INFO]  Rollbacking MigrationPlan(0003_seed_user_table)
+2025-10-08 02:32:02 [INFO]  Migrated SQL=DELETE FROM `user` WHERE `id`=1;, result.rowcount=1
+2025-10-08 02:32:02 [INFO]  Rollbacking MigrationPlan(0002_add_address_to_user_tab_v2)
+2025-10-08 02:32:02 [INFO]  Run skeema push dev --allow-unsafe
+2025-10-08 02:32:03 [ERROR]  Command '['skeema', 'push', 'dev', '--allow-unsafe']' returned non-zero exit status 2.
+2025-10-08 02:32:05 [INFO]  Migration history:
+|   ver | name                       | type   | state       | rollbackable   | created             | updated             |
+|-------+----------------------------+--------+-------------+----------------+---------------------+---------------------|
+|  0000 | init                       | schema | SUCCESSFUL  | false          | 2025-10-08 02:02:19 | 2025-10-08 02:02:19 |
+|  0001 | add_address_to_user_tab    | schema | SUCCESSFUL  | true           | 2025-10-08 02:04:45 | 2025-10-08 02:19:05 |
+|  0002 | add_address_to_user_tab_v2 | schema | ROLLBACKING | true           | 2025-10-08 02:20:40 | 2025-10-08 02:32:03 |
+2025-10-08 02:32:05 [INFO]  Done
+2025-10-08 02:34:55 [INFO]  Done
+2025-10-08 02:34:57 [INFO]  Done
+2025-10-08 02:35:45 [INFO]  Migration history:
+|   ver | name   | type   | state      | rollbackable   | created             | updated             |
+|-------+--------+--------+------------+----------------+---------------------+---------------------|
+|  0000 | init   | schema | SUCCESSFUL | false          | 2025-10-08 02:02:19 | 2025-10-08 02:02:19 |
+2025-10-08 02:35:45 [INFO]  Done
